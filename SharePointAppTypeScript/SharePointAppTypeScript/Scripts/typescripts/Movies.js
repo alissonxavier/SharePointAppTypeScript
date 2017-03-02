@@ -3,6 +3,10 @@ var SPMovies;
     var Movies = (function () {
         function Movies() {
         }
+        Movies.prototype.getAll = function () {
+            var movies = new Array();
+            return movies;
+        };
         Movies.prototype.getById = function (id) {
             var movie = new Movie();
             return movie;

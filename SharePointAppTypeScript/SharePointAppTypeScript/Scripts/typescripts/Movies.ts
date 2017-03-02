@@ -3,6 +3,13 @@
 
         constructor() { }
 
+        getAll(): Array<Movie> {
+
+            var movies = new Array<Movie>();
+
+            return movies;
+        }
+
         getById(id: number): Movie {
             var movie = new Movie();
 
