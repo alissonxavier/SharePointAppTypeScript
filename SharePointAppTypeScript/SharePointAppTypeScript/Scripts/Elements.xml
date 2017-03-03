@@ -8,5 +8,17 @@
     <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
     <File Path="Scripts\typescripts\Movies.ts" Url="Scripts/typescripts/Movies.ts" ReplaceContent="TRUE" />
     <File Path="Scripts\typescripts\Movies.js" Url="Scripts/typescripts/Movies.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\jquery\jquery.d.ts" Url="Scripts/typings/jquery/jquery.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typings\toastr\toastr.d.ts" Url="Scripts/typings/toastr/toastr.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\MoviesController.ts" Url="Scripts/typescripts/MoviesController.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\MoviesController.js" Url="Scripts/typescripts/MoviesController.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.js" Url="Scripts/angular.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.min.js" Url="Scripts/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\_all.ts" Url="Scripts/typescripts/_all.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\_all.js" Url="Scripts/typescripts/_all.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\Application.ts" Url="Scripts/typescripts/Application.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\IMovieScope.ts" Url="Scripts/typescripts/IMovieScope.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\Application.js" Url="Scripts/typescripts/Application.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\typescripts\IMovieScope.js" Url="Scripts/typescripts/IMovieScope.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

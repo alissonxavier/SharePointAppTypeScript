@@ -9,5 +9,17 @@
     <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="typescripts\Movies.ts" Target="Scripts\typescripts\" Type="ElementFile" />
     <ProjectItemFile Source="typescripts\Movies.js" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\jquery\jquery.d.ts" Target="Scripts\typings\jquery\" Type="ElementFile" />
+    <ProjectItemFile Source="typings\toastr\toastr.d.ts" Target="Scripts\typings\toastr\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\MoviesController.ts" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\MoviesController.js" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\_all.ts" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\_all.js" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\Application.ts" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\IMovieScope.ts" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\Application.js" Target="Scripts\typescripts\" Type="ElementFile" />
+    <ProjectItemFile Source="typescripts\IMovieScope.js" Target="Scripts\typescripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

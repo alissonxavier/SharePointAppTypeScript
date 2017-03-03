@@ -1,0 +1,20 @@
+{
+  "name": "SharePointAppTypeScript",
+  "homepage": "https://github.com/alissonxavier/SharePointAppTypeScript",
+  "authors": [
+    "alisson.xavier@ifactory.com.br"
+  ],
+  "description": "Projeto responsável pelas as dependências dos arquivos estáticos",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2"
+  }
+}

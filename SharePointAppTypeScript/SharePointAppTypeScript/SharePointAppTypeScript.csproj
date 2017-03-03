@@ -44,6 +44,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="bower.json" />
     <None Include="Features\Pages\Pages.feature">
       <FeatureId>{b71be9da-afa5-4f0c-8035-2c2bc892a847}</FeatureId>
     </None>
@@ -66,6 +67,7 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6c5c6787-2d6e-4ca4-bec1-d7cb5a81ce13}</SharePointProjectItemId>
     </None>
+    <Content Include="Elements.xml" />
     <Content Include="Features\Pages\Pages.Template.xml">
       <DependentUpon>Pages.feature</DependentUpon>
     </Content>
@@ -83,19 +85,36 @@
     </Content>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1a5ec284-be12-4318-8669-fa706099e3b3}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1d7714aa-33f6-4892-b317-fce693848986}</SharePointProjectItemId>
     </None>
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\typescripts\Application.js">
+      <DependentUpon>Application.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\typescripts\IMovieScope.js">
+      <DependentUpon>IMovieScope.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\typescripts\Movies.js">
       <DependentUpon>Movies.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\typescripts\MoviesController.js">
+      <DependentUpon>MoviesController.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\typescripts\_all.js">
+      <DependentUpon>_all.ts</DependentUpon>
     </Content>
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
@@ -135,9 +154,23 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\typescripts\Application.ts" />
+    <TypeScriptCompile Include="Scripts\typescripts\IMovieScope.ts" />
     <TypeScriptCompile Include="Scripts\typescripts\Movies.ts" />
+    <TypeScriptCompile Include="Scripts\typescripts\MoviesController.ts" />
+    <TypeScriptCompile Include="Scripts\typescripts\_all.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\microsoft-ajax\microsoft.ajax.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\toastr\toastr.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -145,5 +178,8 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" />
 </Project>

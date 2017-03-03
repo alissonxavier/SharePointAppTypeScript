@@ -1,5 +1,4 @@
 ﻿'use strict';
-
 var context = SP.ClientContext.get_current();
 var user = context.get_web().get_currentUser();
 

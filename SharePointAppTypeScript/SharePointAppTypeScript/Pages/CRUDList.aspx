@@ -5,7 +5,7 @@
 
 <WebPartPages:AllowFraming ID="AllowFraming" runat="server" />
 
-<html>
+<html ng-app="MyAppModule">
 <head>
     <title></title>
 
@@ -13,7 +13,9 @@
     <script type="text/javascript" src="/_layouts/15/MicrosoftAjax.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
     <script type="text/javascript" src="/_layouts/15/sp.js"></script>
-
+    <script type="text/javascript" src="../Scripts/angular.js"></script>
+    <script type="text/javascript" src="../Scripts/typescripts/MoviesController.js"></script>
+    <script type="text/javascript" src="../Scripts/typescripts/Application.js"></script>
     <script type="text/javascript">
         // Set the style of the client web part page to be consistent with the host web.
         (function () {
@@ -38,5 +40,9 @@
     </script>
 </head>
 <body>
+    <div ng-controller="MoviesController">
+        <span>{{mensagemLista}}</span>
+        <input type="button" ng-click="movies.allMovies()" value="OK">
+    </div>
 </body>
 </html>

@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="Movie" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Movie" Description="My List Instance"></ListInstance>
+  <ListInstance Title="Movie" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/Movie" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Logan</Field>
+          <Field Name="Year">2017</Field>
+          <Field Name="Genre">Ação</Field>
+          <Field Name="Rating">5</Field>
+          <Field Name="Synopsis">Em 2024, os mutantes estão em declínio e as pessoas não sabem o motivo. Uma organização está transformando as crianças mutantes em assassinas e Wolverine, a pedido do Professor Xavier, precisa proteger a jovem e poderosa Laura Kinney, conhecida como X-23. Enquanto isso, o vilão Nathaniel Essex amplia seu projeto de destruição</Field>
+          <Field Name="Post">teste</Field>
+        </Row>
+      </Rows>
+    </Data>    
+  </ListInstance>
 </Elements>

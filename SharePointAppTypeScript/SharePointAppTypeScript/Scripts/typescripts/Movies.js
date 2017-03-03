@@ -1,3 +1,5 @@
+/// <reference path="../typings/sharepoint/sharepoint.d.ts" />
+/// <reference path="../typings/toastr/toastr.d.ts" />
 var SPMovies;
 (function (SPMovies) {
     var Movies = (function () {
@@ -8,7 +10,25 @@ var SPMovies;
             return movies;
         };
         Movies.prototype.getById = function (id) {
+            var clientContext = SP.ClientContext.get_current();
+            var oWebsite = clientContext.get_web();
+            var oList = oWebsite.get_lists().getByTitle("Movie");
+            var oListItem = oList.getItemById(id);
+            clientContext.load(oListItem);
+            clientContext.executeQueryAsync(successHandler, errorHandler);
             var movie = new Movie();
+            function successHandler() {
+                movie.Title = oListItem.get_item("Title");
+                movie.Year = oListItem.get_item("Year");
+                movie.Genre = oListItem.get_item("Genre");
+                movie.Rating = oListItem.get_item("Rating");
+                movie.Synopsis = oListItem.get_item("Synopsis");
+                movie.Post = oListItem.get_item("Post");
+                toastr["success"]("Resultado Efetuado com sucesso.", "OK");
+            }
+            function errorHandler() {
+                toastr["error"]("Request failed: " + arguments[1].get_message(), "Erro ao buscar o item da lista");
+            }
             return movie;
         };
         return Movies;
